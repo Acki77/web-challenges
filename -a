@@ -1,0 +1,53 @@
+[33mcommit ca9c6b46bb522ce70f11ad68c4ccacb6bc771d4e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfrank[m[33m)[m
+Merge: 085ebcf 4eaa624
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 15:45:18 2025 +0100
+
+    Merge branch 'main' of github.com:Acki77/web-challenges into frank
+
+[33mcommit 085ebcf18b39b3b5e9dcc7169bd41c5c64dd5ed9[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 15:44:14 2025 +0100
+
+    add css challanges
+
+[33mcommit 4eaa624917679894b668a36753a25f3e7dac9e12[m
+Merge: c79f1f6 244ba26
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 12:42:19 2025 +0100
+
+    Merge pull request #1 from Acki77/frank
+    
+    add newbranch-md
+
+[33mcommit 244ba26fa044f74fbbc954c2d253e3d82636f4ad[m[33m ([m[1;31morigin/frank[m[33m)[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 12:28:32 2025 +0100
+
+    Update newbranch.md
+    
+    Co-authored-by: Felix Kirchhoff <59687330+F-Kirchhoff@users.noreply.github.com>
+
+[33mcommit 614a3d6dbbf860d6c48433529d9db03c3829950d[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 12:22:51 2025 +0100
+
+    change newbranches.md
+
+[33mcommit 63af47f39ad0f10b7fd7827657ef117e6f809dc7[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Tue Dec 2 11:57:24 2025 +0100
+
+    add newbranch-md
+
+[33mcommit c79f1f6d3c82c3b1dd2e2b5aa2ece444ee0fbec5[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Mon Dec 1 16:09:15 2025 +0100
+
+    add folder HTML
+
+[33mcommit 0143a02f272fdadbaaa8201d98361d9363346620[m
+Author: Frank A. <acki77.github@digital-filestore.de>
+Date:   Mon Dec 1 16:04:29 2025 +0100
+
+    add doc-a.md
