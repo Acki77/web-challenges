@@ -1,2 +1,2 @@
 Hello World
-Test newe Branches
+Test new Branches
