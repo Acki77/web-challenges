@@ -9,14 +9,19 @@ body {
   font-family: system-ui;
 }
 
-
-
 .image-board__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 200px 300px;
   gap: 1rem;
   padding: 1rem;
+  grid-template-areas:
+    "ban pin mel"
+    "ban pin mel"
+    "ban pin mel"
+    "app pin cau"
+    "app tom cau"
+    "app tom cau";
   /* Add styles here */
 }
 
@@ -30,24 +35,31 @@ body {
 
 .image-board__image--1 {
   /* Add styles here */
+  grid-area: ban;
 }
 
 .image-board__image--2 {
   /* Add styles here */
+  grid-area: app;
 }
 
 .image-board__image--3 {
   /* Add styles here */
+  grid-area: mel;
 }
 
 .image-board__image--4 {
   /* Add styles here */
+  grid-area: pin;
 }
 
 .image-board__image--5 {
   /* Add styles here */
+  grid-area: tom;
 }
 
 .image-board__image--6 {
   /* Add styles here */
+
+  grid-area: cau;
 }
