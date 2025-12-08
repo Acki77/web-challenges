@@ -17,10 +17,7 @@ body {
   padding: 1rem;
   grid-template-areas:
     "ban pin mel"
-    "ban pin mel"
-    "ban pin mel"
     "app pin cau"
-    "app tom cau"
     "app tom cau";
   /* Add styles here */
 }
