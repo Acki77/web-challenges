@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const postTitle = "My First Post";
+const postContent = "Hello everyone! This is my first post on this platform.";
+let postLikes = 8;
+const postUser = "user001";
+const isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,13 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+console.log(postTitle);
+console.log(postContent);
+console.log(postLikes);
+console.log(postUser);
+console.log(isReported);
+postLikes += 1;
+console.log(postLikes);
+postLikes++;
+console.log(postLikes);
 // --^-- write your code here --^--
