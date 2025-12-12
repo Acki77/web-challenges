@@ -98,5 +98,35 @@ Step 2: Add event listeners to update `operand1` based on the button clicked. Lo
 */
 
 // --v-- write your code here --v--
+const increaseByOne = document.querySelector('[data-js="increase-by-one"]');
+const increaseByFive = document.querySelector('[data-js="increase-by-five"]');
+const decreaseByOne = document.querySelector('[data-js="decrease-by-one"]');
+const decreaseByFive = document.querySelector('[data-js="decrease-by-five"]');
+const multiblyByTwo = document.querySelector('[data-js="multiply-by-two"]');
+const divideByTwo = document.querySelector('[data-js="divide-by-two"]');
 
+increaseByOne.addEventListener("click", () => {
+  operand1++;
+  console.log("Neuer Wert Operand1 erhöht um 1: " + operand1);
+});
+increaseByFive.addEventListener("click", () => {
+  operand1 += 5;
+  console.log("Neuer Wert Operand1 erhöht um 5: " + operand1);
+});
+decreaseByOne.addEventListener("click", () => {
+  operand1--;
+  console.log("Neuer Wert Operand1 reduziert um 1: " + operand1);
+});
+decreaseByFive.addEventListener("click", () => {
+  operand1 -= 5;
+  console.log("Neuer Wert Operand1 reduziert um 5: " + operand1);
+});
+multiblyByTwo.addEventListener("click", () => {
+  operand1 *= 2;
+  console.log("Neuer Wert Operand1 multipliziert mit 2: " + operand1);
+});
+divideByTwo.addEventListener("click", () => {
+  operand1 = operand1 / 2;
+  console.log("Neuer Wert Operand1 dividiert durch 2: " + operand1);
+});
 // --^-- write your code here --^--
