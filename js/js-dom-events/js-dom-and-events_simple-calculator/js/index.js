@@ -1,6 +1,6 @@
 console.clear();
 
-const operand1 = 12;
+let operand1 = 12;
 const operand2 = 4;
 
 // ----- Mathematical Operations -----
@@ -8,7 +8,12 @@ const operand2 = 4;
 // Step 1: Use `document.querySelector` to select each button by its `data-js` attribute.
 
 // --v-- write your code here --v--
-
+const add = document.querySelector('[data-js="add"]');
+const subtract = document.querySelector('[data-js="subtract"]');
+const multiply = document.querySelector('[data-js="multiply"]');
+const divide = document.querySelector('[data-js="divide"]');
+const exponent = document.querySelector('[data-js="exponent"]');
+const modulo = document.querySelector('[data-js="modulo"]');
 // --^-- write your code here --^--
 
 /* 
@@ -22,7 +27,62 @@ For each operation (add, subtract, multiply, divide, exponent, and modulo):
 */
 
 // --v-- write your code here --v--
-
+add.addEventListener("click", () => {
+  let summe = operand1 + operand2;
+  console.log(
+    "Die Summe aus " + operand1 + " + " + operand2 + " ist gleich: " + summe
+  );
+});
+subtract.addEventListener("click", () => {
+  let differenz = operand1 - operand2;
+  console.log(
+    "Die Differenz aus " +
+      operand1 +
+      " - " +
+      operand2 +
+      " ist gleich: " +
+      differenz
+  );
+});
+multiply.addEventListener("click", () => {
+  let produkt = operand1 * operand2;
+  console.log(
+    "Das Produkt aus " + operand1 + " * " + operand2 + " ist gleich: " + produkt
+  );
+});
+divide.addEventListener("click", () => {
+  let quotient = operand1 / operand2;
+  console.log(
+    "Der Quotient aus " +
+      operand1 +
+      " / " +
+      operand2 +
+      " ist gleich: " +
+      quotient
+  );
+});
+exponent.addEventListener("click", () => {
+  let potenzwert = operand1 ** operand2;
+  console.log(
+    "Der Potenzwert aus der Basis " +
+      operand1 +
+      " hoch Exponent " +
+      operand2 +
+      " ist gleich: " +
+      potenzwert
+  );
+});
+modulo.addEventListener("click", () => {
+  let rest = operand1 % operand2;
+  console.log(
+    "Der Restwert aus der Divison " +
+      operand1 +
+      " / " +
+      operand2 +
+      " ist gleich: " +
+      rest
+  );
+});
 // --^-- write your code here --^--
 
 // ----- Update the First Operand -----
