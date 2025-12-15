@@ -9,7 +9,10 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const bookTitle = "Poker Asses";
+const bookAuthor = "Frank";
+let bookRating = 4.2;
+let bookSales = 120;
 // --^-- write your code here --^--
 
 /*
@@ -27,7 +30,18 @@ Then:
 */
 
 // --v-- write your code here --v--
+console.log("Buch Titel: ", bookTitle);
+console.log("Buch Autor: ", bookAuthor);
+console.log("Buch Bewertung: ", bookRating);
+console.log("Buch Verkauf: ", bookSales);
 
+/* bookRating += 0.2;
+bookSales += 10;
+
+console.log("Buch Titel: ", bookTitle);
+console.log("Buch Autor: ", bookAuthor);
+console.log("Buch Bewertung: ", bookRating);
+console.log("Buch Verkauf: ", bookSales); */
 // --^-- write your code here --^--
 
 /*
@@ -40,5 +54,15 @@ Then:
 */
 
 // --v-- write your code here --v--
+function LogBookData() {
+  bookRating += 0.2;
+  bookSales += 10;
 
+  console.log("Buch Titel: ", bookTitle);
+  console.log("Buch Autor: ", bookAuthor);
+  console.log("Buch Bewertung: ", bookRating);
+  console.log("Buch Verkauf: ", bookSales);
+}
+LogBookData();
+LogBookData();
 // --^-- write your code here --^--
