@@ -12,23 +12,34 @@ Each function should return the result of its respective calculation:
 
 function add(a, b) {
   // Implement the addition logic here
+  //let sum = a+b;
+  return a + b;
 }
+console.log("Die Summe lautet: " + add(1, 1));
 
 function subtract(a, b) {
   // Implement the subtraction logic here
+  return a - b;
 }
+console.log("Die Differenz lautet: " + subtract(1, 1));
 
 function multiply(a, b) {
   // Implement the multiplication logic here
+  return a * b;
 }
+console.log("Das Produkt lautet: " + multiply(1, 1));
 
 function divide(a, b) {
   // Implement the division logic here
+  return a / b;
 }
+console.log("Der Qotient lautet: " + divide(3, 6));
 
 function remainder(a, b) {
   // Implement the remainder (modulo) logic here
+  return a % b;
 }
+console.log("der Rest lautet: " + remainder(3, 2));
 
 /*
 These console.assert statements verify that your functions work correctly.
