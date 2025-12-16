@@ -23,7 +23,8 @@
         <strong>Note:</strong> This form is not intended to be used for any
         other purpose than to complain to customer support.
       </p>
-      <form data-js="form">
+      <!-- <form action="" data-js="form"> -->
+      <form action="">
         <fieldset>
           <legend>Personal Information</legend>
           <label for="first-name">First Name</label>
@@ -32,6 +33,9 @@
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="last-name">Last Name</label>
@@ -40,22 +44,39 @@
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            placeholder="Minimum age 14 years"
+            min="14"
+            required
+          />
 
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email@domain.com"
+            required
+          />
         </fieldset>
 
         <fieldset>
           <legend>Your Complaint</legend>
           <label for="complaint">What went wrong?</label>
-          <select name="complaint" id="complaint">
-            <option value="nothing" selected>
-              Nothing, everything is fine!
+          <select name="complaint" id="complaint" required>
+            <option value="notselected" disabled selected>
+              --Please select--
             </option>
+            <option value="nothing">Nothing, everything is fine!</option>
             <option value="personal">It's me, not you!</option>
             <option value="broken">
               My product is broken, can you fix it?
@@ -67,6 +88,7 @@
             name="details"
             id="details"
             placeholder="Please provide as much detail as possible"
+            required
           ></textarea>
 
           <label for="badness"
@@ -83,13 +105,14 @@
           />
 
           <label for="order-date">Order Date</label>
-          <input type="date" name="orderDate" id="order-date" />
+          <input type="date" name="orderDate" id="order-date" required />
 
           <label for="terms-of-service">
             <input
               type="checkbox"
               name="terms-of-service"
               id="terms-of-service"
+              required
             />
             I have read the terms of service and agree to sell my soul
             <a
@@ -102,7 +125,8 @@
           </label>
         </fieldset>
 
-        <button type="submit">Complain now!</button>
+        <input type="submit" value="Complain Now!" />
+        <input type="reset" value="Reset Form" />
       </form>
     </main>
   </body>
