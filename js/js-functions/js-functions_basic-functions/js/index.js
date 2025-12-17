@@ -60,9 +60,11 @@ function LogBookData() {
 
   console.log("Buch Titel: ", bookTitle);
   console.log("Buch Autor: ", bookAuthor);
-  console.log("Buch Bewertung: ", bookRating);
+  console.log("Buch Bewertung: ", bookRating.toFixed(1));
   console.log("Buch Verkauf: ", bookSales);
 }
+LogBookData();
+LogBookData();
 LogBookData();
 LogBookData();
 // --^-- write your code here --^--
