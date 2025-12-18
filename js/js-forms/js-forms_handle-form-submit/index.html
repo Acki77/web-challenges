@@ -32,6 +32,9 @@
             name="firstName"
             id="first-name"
             placeholder="Your first name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="last-name">Last Name</label>
@@ -40,13 +43,23 @@
             name="lastName"
             id="last-name"
             placeholder="Your last name"
+            minlength="4"
+            maxlength="30"
+            required
           />
 
           <label for="age">Age</label>
-          <input type="number" name="age" id="age" min="16" max="200" />
+          <input
+            type="number"
+            name="age"
+            id="age"
+            min="16"
+            max="200"
+            required
+          />
 
           <label for="email">Email</label>
-          <input type="email" name="email" id="email" />
+          <input type="email" name="email" id="email" required />
         </fieldset>
 
         <fieldset>
@@ -69,6 +82,7 @@
             rows="10"
             cols="50"
             placeholder="Please provide as much detail as possible"
+            required
           ></textarea>
 
           <label for="badness"
@@ -85,10 +99,10 @@
           />
 
           <label for="order-date">Order Date</label>
-          <input type="date" name="orderDate" id="order-date" />
+          <input type="date" name="orderDate" id="order-date" required />
 
           <label for="tos">
-            <input type="checkbox" name="tos" id="tos" />
+            <input type="checkbox" name="tos" id="tos" required />
             I have read the terms of service and agree to sell my soul
             <a
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
