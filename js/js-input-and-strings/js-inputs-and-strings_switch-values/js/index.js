@@ -1,6 +1,7 @@
 console.clear();
 
 const firstInput = document.querySelector('[data-js="first-input"]');
+const secondInput = document.querySelector('[data-js="second-input"]');
 const uppercaseButton = document.querySelector('[data-js="button-uppercase"]');
 const lowercaseButton = document.querySelector('[data-js="button-lowercase"]');
 const switchcaseButton = document.querySelector(
@@ -9,11 +10,15 @@ const switchcaseButton = document.querySelector(
 
 uppercaseButton.addEventListener("click", () => {
   firstInput.value = firstInput.value.toUpperCase();
+  secondInput.value = secondInput.value.toUpperCase();
+  console.log("first: ", firstInput.value);
 });
 
 lowercaseButton.addEventListener("click", () => {
   firstInput.value = firstInput.value.toLowerCase();
+  secondInput.value = secondInput.value.toLowerCase();
 });
 switchcaseButton.addEventListener("click", () => {
   // think about with prepare true false
+  [firstInput.value, secondInput.value] = [secondInput.value, firstInput.value];
 });
