@@ -13,7 +13,8 @@ const company = {
 };
 
 // Example: export const { value1 } = myObject;
-
+export const { course } = company;
+console.log("Course: ", course);
 /*
 EXERCISE 2
 We have an object called `user`.
@@ -25,7 +26,8 @@ Use destructuring to extract the following:
 */
 
 const user = { name: "John", years: 30 };
-
+export const {name, years: age,isAdmin=false} = user;
+console.log("User: ",name,age,isAdmin);
 /*
 EXERCISE 3
 Extract properties from the dog object and
@@ -37,7 +39,7 @@ const dog = {
   breed: "husky",
   age: 5,
 };
-
+const {name: dogName, breed: dogBreed, age: dogAge} = dog;
 /*
 EXERCISE 4
 Extract the `lastName` property from the `person` object as `personLastName`.
