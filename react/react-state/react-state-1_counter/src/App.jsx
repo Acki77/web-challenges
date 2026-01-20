@@ -3,6 +3,8 @@ import { useState } from "react";
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const colorClass =
+    count < 0 ? "text-red" : count > 0 ? "text-green" : "text-black";
 
   function CounterPlus() {
     setCount(count + 1);
@@ -13,7 +15,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>{count}</h1>
+      <h1 className={colorClass}>{count}</h1>
       <div className="button-container">
         <button type="button" onClick={CounterMinus}>
           -

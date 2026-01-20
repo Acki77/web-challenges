@@ -43,3 +43,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
 }
+.text-red {
+  color: red;
+}
+.text-green {
+  color: green;
+}
+.text-black {
+  color: black;
+}
