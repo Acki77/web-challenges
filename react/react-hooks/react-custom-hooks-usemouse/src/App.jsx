@@ -69,7 +69,7 @@ export default function App() {
           vero est architecto maxime? Aperiam nam in est voluptas?
         </p>
       </main>
-      <Cursor />
+      <Cursor x={x} y={y} />
     </>
   );
 }
