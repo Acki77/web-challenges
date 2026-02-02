@@ -1,3 +1,4 @@
+import styled, { css } from "styled-components";
 export default function Card() {
   return (
     <div className="card">
@@ -11,3 +12,4 @@ export default function Card() {
     </div>
   );
 }
+const Card = styled.div``;
