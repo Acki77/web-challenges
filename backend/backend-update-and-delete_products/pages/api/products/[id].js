@@ -16,6 +16,20 @@ export default async function handler(request, response) {
     response.status(200).json(product);
     return;
   }
+  if (request.method === "PUT") {
+    const updateProduct = request.body;
+    await Product.findByIdAndUpdate(id, updateProduct);
+    return response
+      .status(200)
+      .json({ status: "Product succesfully updated." });
+  }
+
+  if (response.method === "DELETE") {
+    await Product.findByIdAndDelete(id);
+    return response
+      .status(200)
+      .json({ status: "Product succesfully deleted." });
+  }
 
   response.status(405).json({ status: "Method not allowed." });
 }

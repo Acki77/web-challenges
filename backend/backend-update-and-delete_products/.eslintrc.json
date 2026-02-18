@@ -12,5 +12,6 @@
     ],
     "no-unused-vars": 0
   },
-  "plugins": ["jest"]
+  "plugins": ["jest"],
+  "extends": "next/core-web-vitals"
 }
