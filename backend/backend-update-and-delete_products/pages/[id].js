@@ -2,7 +2,7 @@ import useSWR from "swr";
 import styled from "styled-components";
 import { useRouter } from "next/router";
 import StyledLink from "@/components/Link";
-import { useState } from "react";
+import React from "react";
 import ProductForm from "@/components/ProductForm";
 
 export default function ProductDetailsPage() {

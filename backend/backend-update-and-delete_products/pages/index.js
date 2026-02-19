@@ -2,6 +2,7 @@ import styled from "styled-components";
 import ProductList from "@/components/ProductList";
 import ProductForm from "@/components/ProductForm";
 import useSWR from "swr";
+import React from "react";
 
 export default function HomePage() {
   const { mutate } = useSWR("/api/products");
